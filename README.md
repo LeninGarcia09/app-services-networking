@@ -6,7 +6,7 @@ The purpose of this post is to be able to quickly compare the different secuirty
 
 ## App Service Overview
 
-## App Service Networking Features
+## App Service Networking Features [maybe add links for each topic overviews like https://learn.microsoft.com/en-us/azure/app-service/app-service-ip-restrictions?tabs=azurecli]
 
 - Access Restrictions: IP and Service Tags rules that can be applied as inbound rules to the App Service
 - VNET Integration: A feature of App Services that allows it to connect to private services via a backend subnet
@@ -80,7 +80,7 @@ Azure Services:
 - Azure SQL
 
 Security at this level:
-- No WAF (recommended)
+- No WAF (recommended) [can you add a reference or more context why is recommended no WAF]
 - TLS enforced and custom certificate can be added to the Web App
 - Traffic into the web app can be limited to one IP (i.e. the corporate firewall IP). Otherwise, it is encrypted but open.
 - Traffic from App to Data can only come from app services by setting the ServiceTags in the Database firewall settings.
@@ -180,7 +180,7 @@ Security at this level:
 - Traffic between the Web App and Data traverses the Azure backbone
 - Traffic from the FrontDoor to the App goes over the internet
 
-### Front Door Premium, App Service under Private Endpoint and VNET integration, and Azure SQL with Private Endpoint
+### Front Door Premium, App Service under Private Endpoint and VNET integration, and Azure SQL with Private Endpoint [is it possible to add some commond use cases or scenarios for each of the following architectures? ]
 
 ```mermaid
 graph LR;
